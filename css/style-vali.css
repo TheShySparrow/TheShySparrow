@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#81ecec;
+    height: 100vh;
+    font-family:"Montserrat" ;
+}
+.card{
+    width: 196px;
+    height: 354.89px;
+    background: white;
+    margin: 150px auto;
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
+}
+.card__img{
+   width: 90%; 
+}
+.card__img img{
+    width: 113%;
+    height: 100%;
+    object-fit: cover;
+}
+.card__color{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.card__color span{
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.card__color--blue{
+    background: darkblue;
+}
+.card__color--grey{
+    background: grey;
+}
+.card__color--pink{
+    background: palevioletred;
+}
+.card__tmark,.card__name,.card__size{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.card__size{
+    cursor: unset;
+}
+.card__tmark,.card__size{
+    color:#999;
+}
+.card__tmark{
+    font-weight: 600;
+}
+.card__price{
+    margin-top: 10px;
+    color: red;
+}
+.card__action{
+    width: 169px;
+    height: 168.8px;
+    background: rgba(12,76,141,.5);
+    color: white;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    margin:-300px 0px  0px 190px;
+    z-index: 5;
+    position: absolute;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+.card__action--detail,.card__action--buy,.card__action--compare{
+    display: block;
+    width: 70%;
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 8px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+.card:hover .card__action{
+    margin: -300px 0 0 0;
+    visibility: visible;
+    opacity: 1;
+} 
